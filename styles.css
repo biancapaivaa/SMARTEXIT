@@ -1,0 +1,265 @@
+/* ---------- ESTILOS GERAIS ---------- */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #001f3f; /* Azul escuro de fundo */
+  color: #f0f0f0; /* Cor clara para texto */
+  line-height: 1.6; /* Altura entre linhas para facilitar a leitura */
+}
+
+
+/* ---------- CABEÇALHO (HEADER) ---------- */
+
+.header {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center;     /* Centraliza verticalmente */
+  height: 120px;
+  background: linear-gradient(to bottom, #00aaff, #003366); /* Degrade azul */
+  color: white;
+}
+
+.logo img {
+  height: 70px;
+  margin-bottom: 1rem; /* Espaço abaixo da logo */
+}
+
+
+/* ---------- NAVEGAÇÃO ---------- */
+
+.nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Permite quebra de linha se necessário */
+  align-items: center;
+  gap: 2rem; /* Espaço entre links */
+  background-color: #001f3f;
+  margin-top: 1.5rem;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  transition: color 0.3s; /* Efeito suave ao passar o mouse */
+}
+
+.nav a:hover {
+  color: #00ccff; /* Cor ao passar o mouse */
+}
+
+.nav-btn {
+  background-color: #00aaff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.nav-btn:hover {
+  background-color: #008ecc;
+  color: white;
+  transform: translateY(-2px); /* Efeito de "saltar" ao passar o mouse */
+}
+
+
+/* ---------- SEÇÃO PRINCIPAL (HERO) ---------- */
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  max-height: 400px;
+  gap: 3rem;
+  padding: 3rem 2rem;
+  background-color: #001f3f;
+}
+
+.hero-text {
+  max-width: 40%;
+  background: linear-gradient(to right, rgba(0, 170, 255, 0.15), rgba(0, 68, 102, 0.15));
+  padding: 1.5rem;
+  border-radius: 2rem;
+  box-shadow: 0 8px 20px rgba(0, 136, 204, 0.4);
+  color: #ffffff;
+  backdrop-filter: blur(2px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-text:hover {
+  transform: translateY(-5px); /* Animação de elevação */
+}
+
+.hero-img {
+  flex: 1;
+  max-height: 100%;
+  object-fit: cover; /* Garante que a imagem se encaixe sem distorcer */
+  border-radius: 2rem;
+  box-shadow: 0 10px 25px rgba(0, 170, 255, 0.25);
+  max-width: 40%;
+}
+
+.hero-img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 30px rgba(0, 170, 255, 0.35);
+}
+
+
+/* ---------- SEÇÕES GENÉRICAS ---------- */
+
+.section {
+  padding: 4rem 2rem;
+  background-color: #002b5c;
+  text-align: left;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.section.dark {
+  background-color: #003366;
+}
+
+.section h2 {
+  color: #00ccff;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.section p,
+.section ul {
+  max-width: 800px;
+  margin: 0 auto;
+  color: #dcdcdc;
+  text-align: left;
+}
+
+
+/* ---------- SEÇÕES COM IMAGEM AO LADO (FLEX) ---------- */
+
+.section-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.section-img {
+  width: 350px;
+  height: auto;
+  border-radius: 1rem;
+  box-shadow: 0 10px 20px rgba(0, 170, 255, 0.2);
+  margin-right: 2rem;
+}
+
+.section-flex div {
+  max-width: 50%;
+}
+
+
+/* ---------- LISTAS ---------- */
+
+ul {
+  text-align: left;
+  padding-left: 1.5rem;
+}
+
+
+/* ---------- BOTÕES ---------- */
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  margin: 1rem;
+  background-color: #00aaff;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #008ecc;
+}
+
+.btn.secondary {
+  background-color: transparent;
+  border: 2px solid #00aaff;
+  color: #00aaff;
+}
+
+.btn-group {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.btn,
+.btn.secondary {
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+}
+
+
+/* ---------- SEÇÃO CHAMADA PARA AÇÃO ---------- */
+
+.call-to-action {
+  background: linear-gradient(to top, #00aaff, #001f3f);
+  text-align: center;
+  padding: 3rem 2rem;
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+
+/* ---------- RODAPÉ (FOOTER) ---------- */
+
+.footer {
+  background-color: #001933;
+  padding: 2rem;
+  color: #b0c4de;
+  font-size: 0.9rem;
+}
+
+.footer a {
+  color: #00ccff;
+  text-decoration: none;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center; /* Garante que tudo esteja centralizado verticalmente */
+  text-align: left;
+}
+
+.footer-logo img {
+  width: 100px;
+}
+
+.footer-contact,
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; /* Espaço entre os textos */
+}
+
+
+/* ---------- IMAGENS DE PRODUTOS (CENTRALIZADAS) ---------- */
+
+.product-img {
+  width: 300px;
+  border-radius: 1rem;
+  margin: 2rem auto;
+  display: block; /* Centraliza horizontalmente com margin auto */
+}
+

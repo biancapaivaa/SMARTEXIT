@@ -231,6 +231,7 @@ ul {
   margin-top: 20px;
 }
 
+<<<<<<< HEAD
 /* ---------- CARROSSEL BENEFÍCIOS ---------- */
 
 .carousel-container {
@@ -283,6 +284,8 @@ ul {
   cursor: not-allowed;
 }
 
+=======
+>>>>>>> 82181fe9096b8ea99039586f7d45e61f2853741e
 /* ---------- SEÇÃO CHAMADA PARA AÇÃO ---------- */
 .call-to-action {
   background: linear-gradient(to top, #00aaff, #001f3f);

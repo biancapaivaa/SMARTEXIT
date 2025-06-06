@@ -1,6 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
   // --- Parte do pagamento ---
   const pagamento = document.getElementById("pagamento");
+<<<<<<< HEAD
+=======
+
+>>>>>>> 82181fe9096b8ea99039586f7d45e61f2853741e
   const pixCampos = document.getElementById("pix-campos");
   const cartaoCampos = document.getElementById("cartao-campos");
   const boletoCampos = document.getElementById("boleto-campos");
@@ -45,6 +49,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // --- Parte do formulário de contato ---
   const formContato = document.getElementById("form-contato");
+<<<<<<< HEAD
+=======
+
+>>>>>>> 82181fe9096b8ea99039586f7d45e61f2853741e
   if (formContato) {
     formContato.addEventListener("submit", function (e) {
       e.preventDefault();
@@ -60,6 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
       formContato.reset();
     });
   }
+<<<<<<< HEAD
 
   // --- Menu Hambúrguer ---
   const hamburger = document.getElementById("hamburger");
@@ -112,4 +121,16 @@ document.addEventListener('DOMContentLoaded', function() {
     updateButtons();
   }
 });
+=======
+  const hamburger = document.getElementById("hamburger");
+const navMenu = document.getElementById("nav-menu");
+
+if (hamburger && navMenu) {
+  hamburger.addEventListener("click", () => {
+    navMenu.classList.toggle("open");
+    hamburger.classList.toggle("open");
+  });
+}
+
+>>>>>>> 82181fe9096b8ea99039586f7d45e61f2853741e
 });

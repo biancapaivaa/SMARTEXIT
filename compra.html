@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprar SmartExit</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="logo.png" alt="SmartExit Logo">
+        </div>
+    
+    </header>
+
+    <nav class="nav" id="nav-menu">
+        <a href="index.html">Página Inicial</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="beneficios.html">Benefícios</a>
+        <a href="contato.html">Contato</a>
+        <a href="compra.html" class="nav-btn">Comprar</a>
+    </nav>
+
+    <!-- Botão Hambúrguer -->
+<button id="hamburger" aria-label="Abrir menu">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Adquira o seu SmartExit</h2>
+            <p>Organize suas saídas de forma inteligente. Faça seu pedido agora mesmo e receba em casa com toda a praticidade.</p>
+
+            <ul>
+                <li>Entrega para todo o Brasil</li>
+                <li>Garantia de 1 ano</li>
+                <li>Suporte técnico incluso</li>
+            </ul>
+            <p class="preco-destaque">Apenas R$169,90</p>
+        </div>
+
+            <img src="compraimg.jpg" alt="Produto em uso" class="hero-img">
+    </section>
+
+    <section id="pedido" class="section dark contato-form">
+  <form>
+    <h2 class="form-titulo">Fazer Pedido</h2>
+  
+    <div class="form-group">
+      <label for="nome">Nome Completo</label>
+      <input type="text" id="nome" name="nome" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">E-mail</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+
+    <div class="form-group">
+      <label for="telefone">Telefone / WhatsApp</label>
+      <input type="tel" id="telefone" name="telefone" required>
+    </div>
+
+    <div class="form-group">
+      <label for="endereco">Endereço Completo</label>
+      <input type="text" id="endereco" name="endereco" required>
+    </div>
+
+    <div class="form-group">
+  <label for="pagamento">Forma de Pagamento</label>
+  <select id="pagamento" name="pagamento" required>
+    <option value="">Selecione...</option>
+    <option value="pix">PIX</option>
+    <option value="cartao">Cartão de Crédito</option>
+    <option value="boleto">Boleto Bancário</option>
+  </select>
+</div>
+
+<!-- Campos adicionais por método de pagamento -->
+<div id="pix-campos" class="form-group extra-campos" style="display: none;">
+  <p>Pague com Pix seguindo as instruções abaixo. <br/><br/>
+    1- Acesse seu Internet Banking ou app de pagamentos.<br/>
+    2- Escolha pagar via Pix.<br/>
+    3- Escaneie o seguinte código:</p>
+  <img src="qrcode.jpeg" alt="QR Code Pix" style="max-width: 200px;">
+</div>
+
+<div id="cartao-campos" class="form-group extra-campos" style="display: none;">
+  <label for="numero-cartao">Número do Cartão</label>
+  <input type="text" id="numero-cartao" name="numero-cartao">
+
+  <label for="validade">Validade</label>
+  <input type="month" id="validade" name="validade">
+
+  <label for="cvv">CVV</label>
+  <input type="text" id="cvv" name="cvv" maxlength="4">
+</div>
+
+<div id="boleto-campos" class="form-group extra-campos" style="display: none;">
+  <p>O boleto será gerado após o envio do pedido e enviado ao e-mail informado.</p>
+</div>
+
+<div class="botao-centralizado"><button type="submit" class="btn">Enviar Pedido</button></div>
+
+  </form>
+</section>
+
+    <section class="call-to-action">
+        <h2>Garanta já o seu SmartExit e revolucione sua rotina diária!</h2>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="logo.png" alt="SmartExit Logo">
+            </div>
+
+            <div class="footer-contact">
+                <p>WhatsApp: (12) 99237-3790</p>
+                <p>E-mail: anavic.braz@gmail.com</p>
+                <p>Endereço: Av. Monsenhor Theodomiro Lobo, 100 – Caçapava - SP</p>
+            </div>
+
+            <div class="footer-social">
+                <p>Facebook:<a href="#"> @smartexitoficial</a></p>
+                <p>Instagram:<a href="https://www.instagram.com/project.smartexit/"> @project.smartexit</a></p>
+                <p>LinkedIn:<a href="#"> @smartexit</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
